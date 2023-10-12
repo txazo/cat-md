@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Service name="Catalina">
+    <!-- 增加 URIEncoding="utf-8" -->
+    <Connector port="8080" protocol="HTTP/1.1"
+               URIEncoding="utf-8" connectionTimeout="20000"
+               redirectPort="8443"/>
+    <Engine name="Catalina" defaultHost="localhost">
+        <Host>
+            <!-- 新增Cat部署 -->
+            <Context docBase="cat.war" path="/cat" reloadable="true"/>
+        </Host>
+    </Engine>
+</Service>
