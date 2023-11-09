@@ -1,0 +1,14 @@
+Host gitee
+HostName gitee.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_gitee
+
+Host git_nio
+HostName git.xxx.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+
+Host github
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_github
